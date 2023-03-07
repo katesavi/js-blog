@@ -1,6 +1,7 @@
 {
   "name": "js-prework",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "init-project": "npm install && npm-run-all init:*",
@@ -16,6 +17,7 @@
     "watch": "npm-run-all build build-dev -p watch:*",
     "watch:browsersync": "browser-sync start --server --files \"css/*.css\" \"*.html\"",
     "watch:sassprefixer": "onchange sass/*.scss -- npm run build-dev"
+    
   },
   "keywords": [],
   "author": "",
@@ -28,14 +30,5 @@
     "postcss": "^8.2.6",
     "postcss-cli": "^8.3.1",
     "sass": "^1.58.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/katesavi/js-prework.git"
-  },
-  "bugs": {
-    "url": "https://github.com/katesavi/js-prework/issues"
-  },
-  "homepage": "https://github.com/katesavi/js-prework#readme",
-  "description": ""
+  }
 }
