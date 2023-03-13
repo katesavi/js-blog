@@ -1,8 +1,18 @@
 'use strict';
 console.log('test1');
 function titleClickHandler(event){
+  const clickedElement = this;
+  for(let activeLink of activeLinks) { 
+    activeLink.classList.add('active');
+    event.preventDefault();
+  }
+  
+  
+``
 }
   console.log('Link was clicked!');
+
+  
 
   /* remove class 'active' from all article links  */
 
@@ -10,9 +20,8 @@ function titleClickHandler(event){
 
 for(let activeLink of activeLinks){
   activeLink.classList.remove('active');
-
 }
-
+console.log('clickedElement:', clickedElements);
   /* add class 'active' to the clicked link */
 
   /* remove class 'active' from all articles */
@@ -24,9 +33,14 @@ for(let activeArticle of activeArticles){
 }
 
   /* get 'href' attribute from the clicked link */
+const articleSelector = clickedElement.getAttribute('#article-1'){
+  
+}
+console.log('articleSelector');
 
   /* find the correct article using the selector (value of 'href' attribute) */
-
+const targetArticle = document.querySelector('#article-2');
+console.log('article-2');
   /* add class 'active' to the correct article */
 
 
