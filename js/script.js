@@ -21,7 +21,7 @@ function titleClickHandler(event){
 for(let activeLink of activeLinks){
   activeLink.classList.remove('active');
 }
-console.log('clickedElement:', clickedElements);
+console.log('clickedElement:', clickedElement);
   /* add class 'active' to the clicked link */
 
   /* remove class 'active' from all articles */
@@ -36,7 +36,7 @@ for(let activeArticle of activeArticles){
 const articleSelector = clickedElement.getAttribute('#article-1')
 
 
-console.log('articleSelector');
+
 
   /* find the correct article using the selector (value of 'href' attribute) */
 const targetArticle = document.querySelector('#article-2');
@@ -49,3 +49,4 @@ const links = document.querySelectorAll('.titles a');
 for(let link of links){
   link.addEventListener('click', titleClickHandler);
 }
+console.log('articleSelector');
