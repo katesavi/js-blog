@@ -37,3 +37,40 @@ function titleClickHandler(event){
   // dodaj klasę active do znalezionego artykułu.
   targetArticle.classList.add('active');
 }
+
+
+const optArticleSelector = '.post',
+    optTitleSelector = '.post-title',
+    optTitleListSelector = '.titles';
+
+function generateTitleLinks(){
+  /* remove contents of titleList */
+  const titleList = document.querySelector(optTitleListSelector);
+  titleList.innerHTML = '';
+
+  /* for each article */
+  const articles = document.querySelectorAll(optArticleSelector);
+
+  for(let article of articles) {
+    const id = article.getAttribute('id');
+    console.log(id);
+    const title = article.querySelector('.post-title').innerHTML;
+    const linkHTML = '<li><a href="#' + id + '"><span>' + title + '</span></a></li>';
+    console.log(linkHTML);
+    titleList.innerHTML = titleList.innerHTML + linkHTML;
+
+  }
+
+  /* get the article id */
+
+  /* find the title element */
+
+  /* get the title from the title element */
+
+  /* create HTML of the link */
+
+  /* insert link into titleList */
+
+}
+
+generateTitleLinks();
